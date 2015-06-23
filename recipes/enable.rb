@@ -19,6 +19,10 @@ node[:byobu][:enable_for_users].each do |u|
 		path "#{home}/.bashrc"
 		line '[ -r ~/.byobu/prompt ] && . ~/.byobu/prompt   #byobu-prompt#'
 	end
+	
+	file "#{home}/.byobu/backend" do
+		content "BYOBU_BACKEND=#{node[:byobu][:default_backend]}"
+	end
 
     file "#{home}/.byobu/disable-autolaunch" do
         action :delete

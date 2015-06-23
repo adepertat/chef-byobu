@@ -3,4 +3,4 @@
 # Recipe:: default
 #
 # Copyright (c) 2015 The Authors, All Rights Reserved.
-include_recipe 'byobu::install'
+include_recipe 'byobu::enable'
