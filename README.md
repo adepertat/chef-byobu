@@ -72,12 +72,11 @@ end
 
 Attributes
 ----------
-| Attribute                        | Default  | Description                              |
-|----------------------------------|----------|------------------------------------------|
-| node[:byobu][:enable_for_users]  | ['root'] | List of users for which to enable byobu  |
-|                                  |          | with the default backend                 |
-| node[:byobu][:disable_for_users] | []       | List of users for which to disable byobu |
-| node[:byobu][:default_backend]   | 'tmux'   | Default byobu backend                    |
+Attribute                          | Default  | Description                              
+-----------------------------------|----------|------------------------------------------
+`node[:byobu][:enable_for_users]`  | ['root'] | List of users for which to enable byobu with the default backend
+`node[:byobu][:disable_for_users]` | []       | List of users for which to disable byobu
+`node[:byobu][:default_backend]`   | 'tmux'   | Default byobu backend
 
 License & Authors
 -----------------
